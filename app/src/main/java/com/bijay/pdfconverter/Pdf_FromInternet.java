@@ -1,6 +1,7 @@
 package com.bijay.pdfconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
@@ -55,7 +56,7 @@ public class Pdf_FromInternet extends AppCompatActivity {
 //                        modeldata = response.body().getData();
                         Toast.makeText(getApplicationContext(), "I am here", Toast.LENGTH_SHORT).show();
                         pdf_recycler_adapter = new Pdf_recycler_adapter(getApplicationContext(), response.body().getData());
-                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
+                        LinearLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(),2,LinearLayoutManager.VERTICAL,false);
                         pdf_recycle.setLayoutManager(linearLayoutManager);
                         pdf_recycle.setAdapter(pdf_recycler_adapter);
                         pdf_recycler_adapter.notifyDataSetChanged();
