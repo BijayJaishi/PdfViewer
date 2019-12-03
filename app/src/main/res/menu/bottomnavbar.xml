@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_news"
+        android:icon="@drawable/ic_picture_as_pdf_black_24dp"
+        android:title="List pdf"/>
+
+    <item
+        android:title="From device"
+        android:icon="@drawable/storage"
+        android:id="@+id/explore"/>
+
+    <item
+        android:title="Settings"
+        android:icon="@drawable/srttings"
+        android:id="@+id/upload"/>
+
+
+</menu>
